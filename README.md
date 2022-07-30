@@ -13,7 +13,7 @@ Make it your own!
 
 
 ###  Lab05
-Number and name of feature: __________________2______________
+Number and name of feature: _______React Component___________2______________
 
 Estimate of time needed to complete: __3.5h___
 
