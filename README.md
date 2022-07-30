@@ -11,12 +11,14 @@ Make it your own!
 
 [Trello Board](https://trello.com/invite/b/e02XJLNS/ebe42886e5a9ad6fdf87124eefe5d21b/fahadportflio)
 
-Number and name of feature: ________________________________
 
-Estimate of time needed to complete: _____
+###  Lab05
+Number and name of feature: __________________2______________
 
-Start time: _____
+Estimate of time needed to complete: __3.5h___
 
-Finish time: _____
+Start time: __1:30pm___
 
-Actual time needed to complete: _____
+Finish time: __5:00pm___
+
+Actual time needed to complete: _2h____
