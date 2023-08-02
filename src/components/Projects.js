@@ -12,6 +12,7 @@ class Projects extends Component {
 
   render() {
     let detailsModalShow = (data) => {
+      console.log('dataaa: ', data);
       this.setState({ detailsModalShow: true, deps: data });
     };
 
@@ -19,6 +20,15 @@ class Projects extends Component {
     if (this.props.resumeProjects && this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.projects;
       this.props.resumeProjects[0].title = "Recipe Book";
+      this.props.resumeProjects[0].repo = [];
+      this.props.resumeProjects[1].repo = [];
+      this.props.resumeProjects[2].repo = [];
+      this.props.resumeProjects[0].deployed = 'https://ng-recipe-book-7d03d.web.app/';
+      this.props.resumeProjects[1].deployed = 'https://news-box-project.netlify.app/';
+      this.props.resumeProjects[2].deployed = '';
+      this.props.resumeProjects[0].repo.push('https://github.com/fha96/basics-project');
+      this.props.resumeProjects[1].repo.push('https://github.com/News-Box-Project');
+      this.props.resumeProjects[2].repo.push('https://github.com/the-callstack');
       this.props.resumeProjects[0].description =
         "At this project, we built a web app using Angular framework to create new recipies, edit existed recipe and delete recipies. On the other hand, we created shopping list dashboard to add shopping items and edit them. You must be authenticated to use and implement our web app features. So, Kindly register into our website and have fun! ";
       this.props.resumeProjects[1].description =
