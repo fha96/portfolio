@@ -55,6 +55,7 @@ class App extends Component {
       dataType: "json",
       cache: false,
       success: function (data) {
+        console.log(data);
         this.setState({ resumeData: data });
       }.bind(this),
       error: function (xhr, status, err) {
@@ -69,6 +70,10 @@ class App extends Component {
       dataType: "json",
       cache: false,
       success: function (data) {
+        const test = data.skills.icons.filter((icon, index) => index <= 6 );
+        data.basic_info.titles[0] = 'Full stack developer' ;
+        console.log(data);
+        data.skills.icons = test ;
         this.setState({ sharedData: data }, () => document.title = `${this.state.sharedData.basic_info.name}`);
       }.bind(this),
       error: function (xhr, status, err) {

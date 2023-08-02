@@ -11,8 +11,8 @@ class About extends Component {
     }
     if (this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.about;
-      var hello = this.props.resumeBasicInfo.description_header;
-      var about = this.props.resumeBasicInfo.description;
+      var hello = 'Full stack developer';
+      var about = "👋 I'm Fahad Zidan. Fictional person for preview purposes :) I'm working with newest front-end frameworks like Angular, React. What you are seeing now is portfolio template from Code Fellows. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Welcome to my porfolio app 💜";
     }
 
     return (

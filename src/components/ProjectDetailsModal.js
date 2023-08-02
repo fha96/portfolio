@@ -8,6 +8,7 @@ class ProjectDetailsModal extends Component {
   render() {
     if (this.props.data) {
       const technologies = this.props.data.technologies;
+      console.log(technologies);
       const images = this.props.data.images;
       var title = this.props.data.title;
       var description = this.props.data.description;
@@ -15,17 +16,19 @@ class ProjectDetailsModal extends Component {
       if (this.props.data.technologies) {
         var tech = technologies.map((icons, i) => {
           return (
-            <li className="list-inline-item mx-3" key={i}>
-              <span>
-                <div className="text-center">
-                  <i className={icons.class} style={{ fontSize: "300%" }}>
-                    <p className="text-center" style={{ fontSize: "30%" }}>
-                      {icons.name}
-                    </p>
-                  </i>
-                </div>
-              </span>
-            </li>
+            null
+            // <li className="list-inline-item mx-3" key={i}>
+            //   <span>
+            //     <div className="text-center">
+            //       <i className={icons.class} style={{ fontSize: "300%" }}>
+            //         <p className="text-center" style={{ fontSize: "30%" }}>
+            //           {console.log('Icons: ',icons)}
+            //           {icons.name}
+            //         </p>
+            //       </i>
+            //     </div>
+            //   </span>
+            // </li>
           );
         });
         if (this.props.data.images) {
